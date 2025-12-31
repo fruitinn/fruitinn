@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffdd57;
+}
+
+.tagline {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffdd57;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Content */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ffdd57;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* Images */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #00ffab;
+}
+
+.card p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
